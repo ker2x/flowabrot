@@ -1,5 +1,0 @@
-module m_fbuddha
-    use m_globals
-    implicit none
-    
-end module m_fbuddha
