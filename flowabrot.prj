@@ -1,0 +1,77 @@
+{
+  "Root":{
+    "Folders":[],
+    "Name":"+flowabrot (flowabrot.exe)",
+    "Files":[{
+        "filename":".\\control.f90",
+        "enabled":"1"
+      },{
+        "filename":".\\flowa.f90",
+        "enabled":"1"
+      },{
+        "filename":".\\globals.f90",
+        "enabled":"1"
+      },{
+        "filename":".\\main.f90",
+        "enabled":"1"
+      },{
+        "filename":".\\progressbar.f90",
+        "enabled":"1"
+      },{
+        "filename":".\\sort.f90",
+        "enabled":"1"
+      }]
+  },
+  "Name":"flowabrot (flowabrot.exe)",
+  "Options":{
+    "Compiler Options":{
+      "Fortran Flags":"",
+      "Link Flags":"-lappgraphics -lgdi32 -lcomdlg32 -lcomctl32 -luuid -loleaut32 -lole32",
+      "C Flags":""
+    },
+    "Architecture":1,
+    "Type":0,
+    "Revision":2,
+    "Windows GUI":1,
+    "File Options":{
+      "Library Directories":["Default Add-On Directory"],
+      "Build Directory":"build",
+      "Module Directory":"modules",
+      "Include Directories":["Default Add-On Include Directory"]
+    },
+    "Target":"flowabrot.exe",
+    "Fortran Options":{
+      "Use C Preprocessor":"false",
+      "Runtime Diagnostics":"false",
+      "Cray Pointers":"true",
+      "Enable Coarrays":"false",
+      "Enforce Standard":"f2008",
+      "Enable OpenMP":"true",
+      "Default Double for Real":"false"
+    },
+    "Code Generation Options":{
+      "CPU Specific":"false",
+      "Processor":"bdver4",
+      "Aggressive Loops":"false",
+      "Debugging":"true",
+      "Optimization Mode":4,
+      "Profiling":"false"
+    },
+    "Build Dependencies":1,
+    "Launch Options":{
+      "Working Directory":"",
+      "Keep Console":"true",
+      "External Console":"false",
+      "Command Line Arguments":"",
+      "Build Before Launch":"true"
+    },
+    "Build Options":{
+      "Makefile":"Makefile",
+      "Auto Makefile":"true"
+    },
+    "Linker Options":{
+      "Static Linking Mode":7,
+      "Link LAPACK":0
+    }
+  }
+}
