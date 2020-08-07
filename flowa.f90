@@ -14,9 +14,9 @@ MODULE m_flowa
     INTEGER, PARAMETER :: file_sorted_unit = 12
     INTEGER, PARAMETER :: file_filtered_unit = 13
     
-    INTEGER, PARAMETER :: miniter = 1000
+    INTEGER, PARAMETER :: miniter = 100
     INTEGER, PARAMETER :: maxiter = 4000
-    INTEGER, PARAMETER :: batchsize = 1000
+    INTEGER, PARAMETER :: batchsize = 10000
 
 
     TYPE orbite_t
@@ -93,9 +93,9 @@ SUBROUTINE update_flowa()
             CALL RANDOM_NUMBER(x)
             CALL RANDOM_NUMBER(y)
             CALL RANDOM_NUMBER(z)
-            orbite(i)%pts_x = 0
-            orbite(i)%pts_y = 0
-            orbite(i)%pts_z = 0
+            !orbite(i)%pts_x = 0
+            !orbite(i)%pts_y = 0
+            !orbite(i)%pts_z = 0
             orbite(i)%iter = 0
             orbite(i)%r = 0
             

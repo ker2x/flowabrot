@@ -29,7 +29,7 @@ FFLAGS=$(SPECIALFLAGS) $(OPTFLAGS) $(PRJ_FFLAGS) -Jmodules
 
 CFLAGS=$(SPECIALFLAGS) $(OPTFLAGS) $(PRJ_CFLAGS)
 
-"build\control.o": ".\control.f90" "modules\m_globals.mod" "modules\m_progressbar.mod" "modules\m_flowa.mod"
+"build\control.o": ".\control.f90" "modules\m_flowa.mod" "modules\m_globals.mod" "modules\m_progressbar.mod"
 	@echo Compiling .\control.f90
 	@$(FC) -c -o "build\control.o" $(FFLAGS) ".\control.f90"
 "modules\m_control.mod" : "build\control.o" .EXISTSONLY
@@ -50,7 +50,7 @@ CFLAGS=$(SPECIALFLAGS) $(OPTFLAGS) $(PRJ_CFLAGS)
 	@echo Compiling .\globals.f90
 	@$(FC) -c -o "build\globals.o" $(FFLAGS) ".\globals.f90"
 
-"build\main.o": ".\main.f90" "modules\m_globals.mod" "modules\m_progressbar.mod" "modules\m_control.mod" "modules\m_flowa.mod"
+"build\main.o": ".\main.f90" "modules\m_control.mod" "modules\m_flowa.mod" "modules\m_globals.mod" "modules\m_progressbar.mod"
 	@echo Compiling .\main.f90
 	@$(FC) -c -o "build\main.o" $(FFLAGS) ".\main.f90"
 
